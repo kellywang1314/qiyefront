@@ -1,0 +1,165 @@
+﻿
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <script src="./assets/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/myfocus-2.0.1.min.js"></script><!--引入myFocus库-->
+    <script type="text/javascript" src="assets/mf-pattern/mF_fancy.js"></script><!--引入风格js文件-->
+    <link href="assets/mf-pattern/mF_fancy.css" type="text/css" /><!--引入风格css文件-->
+    <link rel="stylesheet" href="css/inner.css"/>
+</head>
+<body>
+<!--整个盒子-->
+<div id="container">
+    <!--浮动咨询广告的设计-->
+    <div id="zixun"><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=123456789&amp;site=www.cactussoft.cn&amp;menu=yes">
+        <img src="./images/services.jpg" alt=""/>
+    </a></div>
+    <!--头-->
+    <div id="header">
+        <!--logo区域-->
+        <div id="logo">
+            <!--logo图片，记住行元素包含在div内-->
+            <div class="logoimg"><img src="./images/新智达logo1副本.png" alt="" width="120px" height="60px"/></div>
+            <div class="logofont"><span>成都新智达智能家居公司</span></div>
+            <div class="logoright"><img src="./images/top.jpg" alt=""/></div>
+            <div id="top">
+                <a href="">设为首页</a>
+                &nbsp;|&nbsp;
+                <a href="">联系我们</a>
+            </div>
+        </div>
+        <!--主菜单区域-->
+        <div id="mainmenu">
+            <!--一级菜单-->
+            <div id="nav">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="aboutus.html">关于我们</a></li>
+                    <li><a href="newlist.html">新闻资讯</a></li>
+                    <li><a href="prolist.html">产品介绍</a></li>
+                    <li><a href="solve.html">解决方案</a></li>
+                    <li><a href="tiyan.html">体验中心</a></li>
+                    <li><a href="sucess.html">成功案例</a></li>
+                    <li><a href="jiameng.html">加盟合作</a></li>
+                    <li><a href="###">资料下载</a></li>
+                    <li class="last"><a href="contact.html">联系我们</a></li>
+                </ul>
+            </div>
+            <!--二级菜单-->
+            <div id="nav3">
+                <ul>
+                    <li><a href="">国内新闻</a></li>
+                    <li><a href="">国际新闻</a></li>
+                    <li><a href="">省内新闻</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--banner广告-->
+
+    <div id="banner">
+        <div class="bannerimg" style="text-align: center"><img src="images/banner1.jpg" width="960px" id="banner1"/></div>
+        <div id="num">
+            <span id="span1">1</span>
+            <span id="span2">2</span>
+            <span id="span3">3</span>
+            <span id="span4">4</span>
+        </div>
+    </div>
+
+    <!--使用myfouse插件实现banner-->
+    <!--<div id="boxID">&lt;!&ndash;焦点图盒子&ndash;&gt;
+        <div class="loading"><img src="img/loading.gif" alt="请稍候..." /></div>&lt;!&ndash;载入画面(可删除)&ndash;&gt;
+        <div class="pic">&lt;!&ndash;内容列表(li数目可随意增减)&ndash;&gt;
+            <ul>
+                <li><img src="images/banner1.jpg" /></li>
+                <li><img src="images/banner2.jpg" /></li>
+                <li><img src="images/banner3.jpg" /></li>
+                <li><img src="images/banner4.jpg" /></li>
+            </ul>
+        </div>
+    </div>-->
+    <!--中间主内容-->
+    <!--中间容器-->
+    <div id="middlebox" style=" background:#FFF; min-height:800px; margin-top: -8px">
+        <div id="prolistleft">
+
+            <div id="box1">
+                <h1>企业导航</h1>
+                <div>
+                    <ul>
+                        <li><a href="#">公司简介</a></li>
+                        <li><a href="#">服务流程</a></li>
+                        <li><a href="#">服务承诺</a></li>
+                        <li><a href="#">服务宗旨</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div id="box2">
+
+                <h1>新闻动态</h1>
+                <div>
+                    <ul>
+                        <li><a href="#">测试测测试测试试</a></li>
+                        <li><a href="#">测试测测试测试试</a></li>
+                        <li><a href="#">测试测测试测试试</a></li>
+                        <li><a href="#">测试测测试测试试</a></li>
+                        <li><a href="#">测试测测试测试试</a></li>
+                        <li><a href="#">测试测测试测试试</a></li>
+                        <li><a href="#">测试测测试测试试</a></li>
+                        <li><a href="#">测试测测试测试试</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div id="box3">
+
+
+                <h1>产品分类</h1>
+                <div>
+                    <ul>
+                        <li><a href="#">测试测测试测试试</a></li>
+                        <li><a href="#">测试测测试测试试</a></li>
+                        <li><a href="#">测试测测试测试试</a></li>
+                        <li><a href="#">测试测测试测试试</a></li>
+                        <li><a href="#">测试测测试测试试</a></li>
+                        <li><a href="#">测试测测试测试试</a></li>
+                        <li><a href="#">测试测测试测试试</a></li>
+                        <li><a href="#">测试测测试测试试</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div id="prolistright">
+            <div id="topimg" class="topimg" ><img src="images/About.jpg" /></div>
+            <div id="topcontent">
+                <div style="background:url(images/lv-left.gif); height:30px; line-height:30px; text-indent:10px;">关于我们</div>
+
+            </div>
+        </div>
+    </div>
+    <!--底部版权信息-->
+    <div id="footer">
+        <div id="bbox">
+            <div>地址：成都市人民中路一段26号2楼 电话：028-88888888,028-66666666 邮箱：524270754@qq.com; 新智达文化传播有限公司</div>
+            <div>CopyRight 2015 All right reserved ICP 备案号 蜀1234567</div>
+        </div>
+
+    </div>
+
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

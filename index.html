@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <script src="./assets/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/myfocus-2.0.1.min.js"></script><!--引入myFocus库-->
+    <script type="text/javascript" src="assets/mf-pattern/mF_fancy.js"></script><!--引入风格js文件-->
+    <link href="assets/mf-pattern/mF_fancy.css" type="text/css" /><!--引入风格css文件-->
+</head>
+<body>
+<!--整个盒子-->
+    <div id="container">
+        <!--浮动咨询广告的设计-->
+        <div id="zixun"><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=123456789&amp;site=www.cactussoft.cn&amp;menu=yes">
+            <img src="./images/services.jpg" alt=""/>
+        </a></div>
+        <!--头-->
+        <div id="header">
+            <!--logo区域-->
+            <div id="logo">
+                <!--logo图片，记住行元素包含在div内-->
+                <div class="logoimg"><img src="./images/新智达logo1副本.png" alt="" width="120px" height="60px"/></div>
+                <div class="logofont"><span>成都新智达智能家居公司</span></div>
+                <div class="logoright"><img src="./images/top.jpg" alt=""/></div>
+                <div id="top">
+                    <a title="设为首页" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.gpolee.com');" href="javascript:;">设为首页</a>
+                    &nbsp;|&nbsp;
+                    <a href="">联系我们</a>
+                </div>
+            </div>
+            <!--主菜单区域-->
+            <div id="mainmenu">
+                <!--一级菜单-->
+                <div id="nav">
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="aboutus.html">关于我们</a></li>
+                        <li><a href="newlist.html">新闻资讯</a></li>
+                        <li><a href="prolist.html">产品介绍</a></li>
+                        <li><a href="solve.html">解决方案</a></li>
+                        <li><a href="tiyan.html">体验中心</a></li>
+                        <li><a href="sucess.html">成功案例</a></li>
+                        <li><a href="jiameng.html">加盟合作</a></li>
+                        <li><a href="###">资料下载</a></li>
+                        <li class="last"><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <!--二级菜单-->
+                <div id="nav3" style="z-index: 1000">
+                    <ul>
+                        <li><a href="">国内新闻</a></li>
+                        <li><a href="">国际新闻</a></li>
+                        <li><a href="">省内新闻</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!--banner广告-->
+
+        <div id="banner">
+            <div class="bannerimg"><img src="images/banner1.jpg" width="960px" id="banner1"/></div>
+            <div id="num">
+                <span id="span1">1</span>
+                <span id="span2">2</span>
+                <span id="span3">3</span>
+                <span id="span4">4</span>
+            </div>
+        </div>
+
+        <!--使用myfouse插件实现banner-->
+        <!--<div id="boxID">&lt;!&ndash;焦点图盒子&ndash;&gt;
+            <div class="loading"><img src="img/loading.gif" alt="请稍候..." /></div>&lt;!&ndash;载入画面(可删除)&ndash;&gt;
+            <div class="pic">&lt;!&ndash;内容列表(li数目可随意增减)&ndash;&gt;
+                <ul>
+                    <li><img src="images/banner1.jpg" /></li>
+                    <li><img src="images/banner2.jpg" /></li>
+                    <li><img src="images/banner3.jpg" /></li>
+                    <li><img src="images/banner4.jpg" /></li>
+                </ul>
+            </div>
+        </div>-->
+        <!--中间主内容-->
+        <div id="main">
+            <!--上部分内容开始-->
+            <div class="maintop" >
+                <!--第一部分-->
+                <div class="maintop1" id="maintop1">
+                    <div class="maintop1title">
+                        <div class="titlefont"><span>新闻动态News</span></div>
+                    </div>
+
+                    <div class="maintop1content" >
+                        <div class="img"> <img src="./images/newsimg.jpg" alt=""/></div>
+                        <ul>
+                            <li>wallace chung hon </li>
+                            <li>wallace chung hon </li>
+                            <li>wallace chung hon </li>
+                            <li>wallace chung hon </li>
+                        </ul>
+                    </div>
+                </div >
+                <!--第一部分结束-->
+                <!--第二部分开始-->
+                <div class="maintop1" id="maintop2">
+                    <div class="maintop1title">
+                        <div class="titlefont"><span>公司动态Company</span></div>
+                    </div>
+                    <div  class="maintop1content">
+                        <div class="img img2" ><img src="./images/companyimg.jpg"  width="260"/></div>
+                        <div class="midfont">
+                                <span>
+                                    看了这几天的采访和视频，我感觉我还可以喜欢这个男人很久，很久。无关他的作品，仅仅是他这个人。
+                                因为他真的是一个温和善良包容的人。对比某些人天天狂批小鲜肉没演技，我哇却说谁没年轻过，
+                                年轻人需要时间来成长和历练....
+                                </span>
+                        </div>
+                    </div>
+
+                </div >
+                <!--第二部分结束-->
+                <!--第三部分开始-->
+                <div class="maintop1" id="maintop3">
+                    <div class="maintop1title">
+                        <div class="titlefont"><span>联系我们Concat Us</span></div>
+                    </div>
+
+                    <div class="maintop1content" >
+                        <div class="img img3"> <img src="./images/Contactimg.jpg" height="60px"/></div>
+                        <ul>
+                            <li>wallace chung hon </li>
+                            <li>wallace chung hon </li>
+                            <li>wallace chung hon </li>
+                            <li>wallace chung hon </li>
+                        </ul>
+                    </div>
+                </div >
+            <!--第三部分结束-->
+            <!--上部分内容结束-->
+        </div>
+            <!--下部分内容开始-->
+            <div id="mainbottom" class="maintop" style="height:300px;">
+                <div id="mainbottomleft" class="maintop1" style="height:280px;">
+                    <div class="maintop1title">
+                        <div class="titlefont"><span>视频中心Video</span></div>
+                    </div>
+                    <div class="maintop1content" >
+
+                    </div>
+                </div>
+                <div id="mainbottomright" class="maintop1" style="width: 641px; height:280px;  margin-right: 0px">
+                        <div class="maintop1title">
+                            <div class="titlefont" ><span>产品展示 Product display</span></div>
+                        </div>
+
+                            <div id="demo">
+                                <div id="indemo">
+                                    <div id="demo1">
+                                        <div style="float: left">
+                                           <div><a href=""><img src="./images/chanpin.jpg" alt="" height="130px"/></a></div>
+                                            <div><span>产品一</span></div>
+                                        </div>
+                                        <div style="float: left">
+                                            <div><a href=""><img src="./images/chanpin.jpg" alt="" height="130px"/></a></div>
+                                            <div><span>产品一</span></div>
+                                        </div>
+                                        <div style="float: left">
+                                            <div><a href=""><img src="./images/chanpin.jpg" alt="" height="130px"/></a></div>
+                                            <div><span>产品一</span></div>
+                                        </div>
+                                        <div style="float: left">
+                                            <div><a href=""><img src="./images/chanpin.jpg" alt="" height="130px"/></a></div>
+                                            <div><span>产品一</span></div>
+                                        </div>
+                                        <div style="float: left">
+                                            <div><a href=""><img src="./images/chanpin.jpg" alt="" height="130px"/></a></div>
+                                            <div><span>产品一</span></div>
+                                        </div>
+                                        <div style="float: left">
+                                            <div><a href=""><img src="./images/chanpin.jpg" alt="" height="130px"/></a></div>
+                                            <div><span>产品一</span></div>
+                                        </div>
+                                        <div style="float: left">
+                                            <div><a href=""><img src="./images/chanpin.jpg" alt="" height="130px"/></a></div>
+                                            <div><span>产品一</span></div>
+                                        </div>
+                                    </div>
+                                    <div id="demo2">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                </div>
+            </div>
+
+     </div>
+        <!--底部版权信息-->
+        <div id="footer">
+            <div id="bbox">
+                <div>地址：成都市人民中路一段26号2楼 电话：028-88888888,028-66666666 邮箱：524270754@qq.com; 新智达文化传播有限公司</div>
+                <div>CopyRight 2015 All right reserved ICP 备案号 蜀1234567</div>
+            </div>
+
+        </div>
+    </div>
+<script src="js/main.js"></script>
+<script src="js/proscrllo.js"></script>
+<script src="js/setHomePage.js"></script>
+<!--<script type="text/javascript">
+    myFocus.set({
+        id:'boxID',//焦点图盒子ID
+        pattern:'mF_fancy',//风格应用的名称
+        time:3,//切换时间间隔(秒)
+        trigger:'click',//触发切换模式:'click'(点击)/'mouseover'(悬停)
+        width:960,//设置图片区域宽度(像素)
+        height:450,//设置图片区域高度(像素)
+        txtHeight:'default'//文字层高度设置(像素),'default'为默认高度，0为隐藏
+    });
+</script>-->
+</body>
+</html>

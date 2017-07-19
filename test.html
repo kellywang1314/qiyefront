@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<form action="" novalidate>
+    <table>
+        <tr>
+            <td>姓名：</td>
+            <td><input type="text"  onfocus="document.getElementById('sp1').innerHTML=''" onblur="checkUser(this.value)"/><span id="sp1"></span></td>
+        </tr>
+        <tr>
+            <td>邮箱：</td>
+            <td><input type="text"  onfocus="document.getElementById('sp2').innerHTML=''" onblur="checkEmail(this.value)"/><span id="sp2"></span></td>
+        </tr>
+        <tr>
+            <td>电话：</td>
+            <td><input type="text"  onfocus="document.getElementById('sp3').innerHTML=''" onblur="checkPhone(this.value)"/><span id="sp3"></span></td>
+        </tr>
+        <tr>
+            <td>内容：</td>
+            <td><textarea name="" id="" cols="25" rows="10"></textarea><span id="sp4"></span></td>
+        </tr>
+        <tr >
+            <td colspan="2">
+                <input type="submit" value="提交"/>
+                <input type="reset" value="取消"/>
+            </td>
+        </tr>
+    </table>
+</form>
+
+<script>
+    function checkUser(User){
+        console.log(User);
+        if(User.trim().length==0){
+            document.getElementById("sp1").innerHTML="请输入用户名";
+            document.getElementById("sp1").style.color="red";
+        }
+    }
+
+    function checkEmail(Email){
+        if(Email.trim().length==0) {
+            document.getElementById("sp2").innerHTML = "请输入邮箱";
+            document.getElementById("sp2").style.color = "red";
+        }else{
+            var reg = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/;
+            if(!reg.test(Email)){
+                document.getElementById("sp2").innerHTML = "请输入正确的邮箱";
+                document.getElementById("sp2").style.color = "red";
+            }
+        }
+    }
+
+    function checkPhone(Phone){
+        if(Phone.trim().length==0) {
+            document.getElementById("sp3").innerHTML = "请输入手机号码";
+            document.getElementById("sp3").style.color = "red";
+        }else{
+            var reg = re = /^1\d{10}$/;
+            if(!reg.test(Phone)){
+                document.getElementById("sp3").innerHTML = "请输入11位手机号码";
+                document.getElementById("sp3").style.color = "red";
+            }
+        }
+    }
+
+
+</script>
+</body>
+</html>
